@@ -6,6 +6,7 @@ import os
 import sys
 PATH_SCRIPT = os.path.realpath(__file__) 
 DIR_SCRIPT  = "/".join(PATH_SCRIPT.split("/")[:-1])
+sys.path.append(f"{DIR_SCRIPT}/lib/")
 
 import h5py
 import datetime
