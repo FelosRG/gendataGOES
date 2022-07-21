@@ -12,8 +12,8 @@ import datetime
 import numpy as np
 import pandas as pd
 from pathlib import Path
-import lib.config
-import lib.GOES
+from  lib import config
+from  lib import GOES
 
 DIR_DESCARGAS = f"{DIR_SCRIPT}/Descargas"
 DIR_DATASETS  = f"{DIR_SCRIPT}/Datasets"
