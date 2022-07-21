@@ -528,6 +528,17 @@ def descargaIntervaloGOES16(producto,
 
             file_name = df["file"].values[index]
             match  = re.search(r"OR_ABI.+",file_name)
+
+            # debug
+            if match is None:
+                print("Ha sallido None otravez...")
+                print(producto)
+                print(datetime_inicio)
+                print(datetime_final)
+                print(banda)
+                print(file_name)
+                print(df["file"])
+
             span   = match.span()
             output_name = file_name[span[0]:span[1]]
 
