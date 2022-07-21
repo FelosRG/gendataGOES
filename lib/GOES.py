@@ -18,8 +18,6 @@ https://github.com/blaylockbk/goes2go
 """
 
 import os
-
-from attr import Attribute
 _path_script = os.path.realpath(__file__) 
 _path_script = "/".join(_path_script.split("/")[:-1])
 _path_root = os.path.realpath(__file__)
@@ -30,7 +28,6 @@ import re
 import s3fs
 import math
 import time
-import pyproj
 import netCDF4
 import datetime
 
@@ -41,7 +38,6 @@ from matplotlib        import cm
 from matplotlib.colors import ListedColormap
 
 from pathlib import Path
-from pyproj  import Proj
 import h5py
 
 
