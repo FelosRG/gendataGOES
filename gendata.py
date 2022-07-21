@@ -12,14 +12,18 @@ import datetime
 import numpy as np
 import pandas as pd
 from pathlib import Path
-from  lib import config
-from  lib import GOES
 
 DIR_DESCARGAS = f"{DIR_SCRIPT}/Descargas"
 DIR_DATASETS  = f"{DIR_SCRIPT}/Datasets"
-
 print(DIR_DATASETS)
 print(DIR_SCRIPT)
+
+from  lib import config
+from  lib import GOES
+
+
+
+
 
 sys.exit()
 # Creamos directorio si no existen.
