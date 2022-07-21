@@ -18,6 +18,10 @@ from  lib import GOES
 DIR_DESCARGAS = f"{DIR_SCRIPT}/Descargas"
 DIR_DATASETS  = f"{DIR_SCRIPT}/Datasets"
 
+print(DIR_DATASETS)
+print(DIR_SCRIPT)
+
+sys.exit()
 # Creamos directorio si no existen.
 Path(DIR_DATASETS).mkdir(parents=True,exist_ok=True)
 
