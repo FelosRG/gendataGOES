@@ -1,0 +1,7 @@
+h5py
+matplotlib
+netCDF4==1.5.7
+numpy
+pandas
+s3fs
+scipy
