@@ -6,15 +6,14 @@ import os
 import sys
 PATH_SCRIPT = os.path.realpath(__file__) 
 DIR_SCRIPT  = "/".join(PATH_SCRIPT.split("/")[:-1])
-sys.path.append(f"{DIR_SCRIPT}/lib/")
-print(f"{DIR_SCRIPT}/lib/")
+
 import h5py
 import datetime
 import numpy as np
 import pandas as pd
 from pathlib import Path
-import config
-import GOES
+import lib.config
+import lib.GOES
 
 DIR_DESCARGAS = f"{DIR_SCRIPT}/Descargas"
 DIR_DATASETS  = f"{DIR_SCRIPT}/Datasets"
