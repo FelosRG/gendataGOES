@@ -243,6 +243,8 @@ PASO 1/2: DESCARGANDO LAS DATOS DE LAS BANDAS.
             datetime_final=fecha_final,
             saltos=config.SALTO_ARCHIVOS
         )
+
+        dias_descargados += 1 
     
     print("Descarga finalizada!")
 

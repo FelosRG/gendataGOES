@@ -431,6 +431,13 @@ def _identificarBandas(df_files):
         match  = re.search(r"-M6C\d\d_",file_name)
         if match == None:
             match = re.search(r"-M3C\d\d_",file_name)
+
+        # debug
+        if match is None:
+            print("Ha salido None otravez...")
+            print(file_name)
+            print(df_files)
+        
         span   = match.span()
         # Número de banda. (En string)
         banda  = file_name[span[1]-3:span[1]-1]
@@ -531,7 +538,7 @@ def descargaIntervaloGOES16(producto,
 
             # debug
             if match is None:
-                print("Ha sallido None otravez...")
+                print("Ha salido None otravez...")
                 print(producto)
                 print(datetime_inicio)
                 print(datetime_final)
