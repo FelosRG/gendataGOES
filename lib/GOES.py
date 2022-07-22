@@ -431,7 +431,8 @@ def _identificarBandas(df_files):
         match  = re.search(r"-M6C\d\d_",file_name)
         if match == None:
             match = re.search(r"-M3C\d\d_",file_name)
-
+            if match == None:
+                match = re.search(r"-M4C\d\d_",file_name)
         # debug
         if match is None:
             print("Ha salido None otravez...")
